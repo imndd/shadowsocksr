@@ -170,6 +170,8 @@ def get_config(is_local):
                 config['method'] = to_str(value)
             elif key == '-o':
                 config['obfs'] = to_str(value)
+            elif key == '-O':
+                config['protocol'] = to_str(value)
             elif key == '-b':
                 config['local_address'] = to_str(value)
             elif key == '-v':
